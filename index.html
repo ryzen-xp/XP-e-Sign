@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Hash Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src='https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js'></script>
+  
+</head>
+<body>
+    <div class="cont">
+        <h1>XP e-Sign</h1>
+        <input type="file" id="fileInput"><br>
+        <label for="signerAddress">Signer Address:</label><br>
+        <input type="text" id="signer" placeholder="signer address...(require only if upload doc)"><br>
+        <div class="button-container">
+            <button onclick="upload()">Upload Doc</button>
+            <button onclick="signDocument()">Sign Document</button>
+            <button onclick="verify()">Verify Doc</button>
+            <button onclick="selfsign()">Personal Doc Sign</button>
+            <h4 id="connected"></h4>
+        </div>
+        <h1 id="status"></h1>
+       
+    </div>
+    <div class="img">
+        <h3 style="text-align: center;">Know, How It's Work on Blockchain</h3>
+        <img src="img.png" alt="Your Image">
+    
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
